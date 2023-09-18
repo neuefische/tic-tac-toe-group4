@@ -1,0 +1,64 @@
+def check_winner(): 
+	check for winner either X or O
+	check for draw
+	else return FALSE (i.e. gave goes on)
+	returns {X, O, False}
+
+def update_board(cell, player):
+	decode user’s input (in the format ‘A1’) for example A1 is board[0]  = ‘X’ or ‘O’
+	put the ‘player’ into the ‘cell’
+
+def print_board():
+	transform the ‘board’ into a 3 by 3 matrix 
+	print it out into the console
+
+
+INITIALIZE board = [‘ ’, ‘ ’, ‘ ’, ‘ ’, ‘ ’, ‘ ’, ‘ ’, ‘ ’, ‘ ’]
+
+INITIALIZE player = “X”
+
+print_board()	
+
+WHILE TRUE
+
+	PRINT player
+	
+	INPUT cell 
+
+	result = update_board(cell)
+
+	print_board()
+	
+	winner = check_winner()
+
+	IF winner
+		PRINT winner
+		END 
+
+	IF winner = ‘draw’
+		PRINT ‘draw’
+		END
+
+	SWITCH player
+
+Further explanation:
+
+INITIALIZE board = [‘X’’, ‘  ’, ‘  ’, ‘ ’, ‘ ’, ‘ ’, ‘ ’, ‘ ’, ‘ ’]
+INITIALIZE board = [‘A1 ’, ‘A2 ’, ‘A3 ’, ‘B1 ’, ‘B2 ’, ‘B3 ’, ‘C1 ’, ‘C2 ’, ‘C3 ’]
+
+print_board()
+
+A1 A2 A3
+B1 B2 B3
+C1 C2 C3
+
+PRINT player  “ Player X’s make your move! ”
+
+INPUT cell like A1
+
+Further implementations: 
+
+Returns TRUE if update successful, otherwise FALSE
+
+IF result = FALSE
+	PRINT message
