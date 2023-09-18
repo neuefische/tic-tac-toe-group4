@@ -2,6 +2,9 @@
 Group4: Berthold, Ilja, Sining (in alphabetical order)
 
 
+Howto: copy ttt.py and utilities.py into your home folder and start from the command line with 'ttt.py'
+
+
 -------------
 
 
